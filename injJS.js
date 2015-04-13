@@ -1,7 +1,7 @@
 document.body.style.backgroundImage = "url('http://i.imgur.com/LmuELPV.jpg')";
 var bklink;
 function cb() {
-bklink = dialog("link for bkimg");
+bklink = prompt("link for bkimg");
 if (bklink == ""){
 document.getElementById("tp-room").style.backgroundImage="url('http://i.imgur.com/LmuELPV.jpg')";
 } else {
