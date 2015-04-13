@@ -1,7 +1,7 @@
 document.body.style.backgroundImage = "url('http://i.imgur.com/LmuELPV.jpg')";
 var bklink;
 function cb() {
-bklink = prompt("link for bkimg");
+bklink = prompt("Enter the image link for the background");
 if (bklink == ""){
 document.getElementById("tp-room").style.backgroundImage="url('http://i.imgur.com/LmuELPV.jpg')";
 } else {
@@ -20,8 +20,8 @@ addChat("<a style='color:#ececec;'>Background turned off.</a>");
 }
 
 
-document.getElementById("twitter-menu").innerHTML="<button onclick='cb()'><div style='size='20px' '>background</div></button><br><button onclick='hb()'><div style='size='20px' '>background</div></button>";
-document.getElementById("facebook-menu").innerHTML="";
+document.getElementById("facebook-menu").innerHTML="<button onclick='cb()'><div style='size='20px' '>background</div></button><br><button onclick='hb()'><div style='size='20px' '>background</div></button>";
+document.getElementById("twitter-menu").innerHTML="";
 
 
 
