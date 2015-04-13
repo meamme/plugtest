@@ -8,11 +8,9 @@ bklink = prompt("Enter the image link for the background");
 if (bklink == ""){
 document.getElementById("tp-room").style.backgroundImage="url('http://i.imgur.com/LmuELPV.jpg')";
 } else {
-document.getElementById("tp-room").style.backgroundImage="url(" + bklink + ")";
+document.getElementById("tp-room").style.backgroundImage="url(" + bklink +")";
 }
 addChat("<a style='color:#ececec;'>Background changed to " + bklink + ".</a>");
-document.getElementById("tp-room").style.max-width="80%";
-document.getElementById("tp-room").style.max-height="80%";
 }
 
 function hb() {
