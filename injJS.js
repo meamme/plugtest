@@ -1,5 +1,6 @@
 document.body.style.backgroundImage = "url('http://i.imgur.com/LmuELPV.jpg')";
 
+document.getElementById("tp-room").style.backgroundImage="url('http://i.imgur.com/LmuELPV.jpg')";
 
 //Stolen from Igor's script <3//
 function addChat(text, color, state, size) {
