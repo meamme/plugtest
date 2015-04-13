@@ -1,12 +1,12 @@
 document.body.style.backgroundImage = "url('http://i.imgur.com/LmuELPV.jpg')";
 
 function cb() {
-alert("ASODASDOASLDOASDLASD");
+
 document.getElementById("tp-room").style.backgroundImage="url('http://i.imgur.com/LmuELPV.jpg')";
 addChat("<a style='color:#ececec;'>Background changed.</a>");
 
 }
-document.getElementById("twitter-menu").innerHTML="<button onclick='cb'><div style='size='20px' '>background</div></button>";
+document.getElementById("twitter-menu").innerHTML="<button onclick='cb()'><div style='size='20px' '>background</div></button>";
 document.getElementById("facebook-menu").innerHTML="";
 
 
