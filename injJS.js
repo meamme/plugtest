@@ -1,6 +1,8 @@
 document.body.style.backgroundImage = "url('http://i.imgur.com/LmuELPV.jpg')";
 
-document.getElementById("tp-room").style.backgroundImage="url('http://i.imgur.com/LmuELPV.jpg')";
+//document.getElementById("tp-room").style.backgroundImage="url('http://i.imgur.com/LmuELPV.jpg')";
+
+document.getElementById("facebook-menu").innerHTML="<button onclick='cb'>hi</button>";
 
 //Stolen from Igor's script <3//
 function addChat(text, color, state, size) {
