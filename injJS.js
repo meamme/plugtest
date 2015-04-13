@@ -5,8 +5,8 @@ document.getElementById("tp-room").style.backgroundImage="url('http://i.imgur.co
 addChat("<a style='color:#ececec;'>Background changed.</a>");
 
 }
-document.getElementById("facebook-menu").innerHTML="<button onclick='cb'><div style='size='20px'   '>background</div></button>";
-document.getElementById("twitter-menu").innerHTML="";
+document.getElementById("twitter-menu").innerHTML="<button onclick='cb'><div style='size='20px'   '>background</div></button>";
+document.getElementById("facebook-menu").innerHTML="";
 //Stolen from Igor's script <3//
 function addChat(text, color, state, size) {
 	var chat = $('#chat-messages'),
