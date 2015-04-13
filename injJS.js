@@ -7,7 +7,7 @@ document.getElementById("tp-room").style.backgroundImage="url('http://i.imgur.co
 } else {
 document.getElementById("tp-room").style.backgroundImage="url(" + bklink + ")";
 }
-addChat("<a style='color:#ececec;'>Background changed.</a>");
+addChat("<a style='color:#ececec;'>Background changed to " + bklink + ".</a>");
 document.getElementById("tp-room").style.max-width="80%";
 document.getElementById("tp-room").style.max-height="80%";
 }
