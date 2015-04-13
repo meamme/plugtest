@@ -21,7 +21,7 @@ addChat("<a style='color:#ececec;'>Background turned off.</a>");
 }
 
 
-document.getElementById("facebook-menu").innerHTML="<button onclick='cb()'><div style='size='20px' '>background</div></button><br><button onclick='hb()'><div style='size='20px' '>background</div></button>";
+document.getElementById("facebook-menu").innerHTML="<button onclick='cb()'><div style='size='20px' '>turn on background</div></button><br><button onclick='hb()'><div style='size='20px' '>turn off background</div></button>";
 document.getElementById("twitter-menu").innerHTML="<div style='color=#292C31'>sa</div>";
 
 
