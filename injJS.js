@@ -6,7 +6,16 @@ document.getElementById("tp-room").style.backgroundImage="url('http://i.imgur.co
 addChat("<a style='color:#ececec;'>Background changed.</a>");
 
 }
-document.getElementById("twitter-menu").innerHTML="<button onclick='cb()'><div style='size='20px' '>background</div></button>";
+
+function hb() {
+
+document.getElementById("tp-room").style.backgroundImage="";
+addChat("<a style='color:#ececec;'>Background changed.</a>");
+
+}
+
+
+document.getElementById("twitter-menu").innerHTML="<button onclick='cb()'><div style='size='20px' '>background</div></button><br><button onclick='hb()'><div style='size='20px' '>background</div></button>";
 document.getElementById("facebook-menu").innerHTML="";
 
 
