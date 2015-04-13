@@ -1,8 +1,12 @@
 document.body.style.backgroundImage = "url('http://i.imgur.com/LmuELPV.jpg')";
-
+var bklink;
 function cb() {
-
+bklink = dialog("link for bkimg");
+if (bklink == ""){
 document.getElementById("tp-room").style.backgroundImage="url('http://i.imgur.com/LmuELPV.jpg')";
+} else {
+document.getElementById("tp-room").style.backgroundImage="url(" + bklink + ")";
+}
 addChat("<a style='color:#ececec;'>Background changed.</a>");
 
 }
@@ -10,7 +14,7 @@ addChat("<a style='color:#ececec;'>Background changed.</a>");
 function hb() {
 
 document.getElementById("tp-room").style.backgroundImage="";
-addChat("<a style='color:#ececec;'>Background changed.</a>");
+addChat("<a style='color:#ececec;'>Background turned off.</a>");
 
 }
 
