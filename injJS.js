@@ -1,5 +1,8 @@
 document.body.style.backgroundImage = "url('http://i.imgur.com/LmuELPV.jpg')";
+
 var bklink;
+
+addChat("<a style='color:#ececec;'>Bender's thing was started.</a>");
 function cb() {
 bklink = prompt("Enter the image link for the background");
 if (bklink == ""){
@@ -50,5 +53,3 @@ function addChat(text, color, state, size) {
 	if (chat.children().length >= 512)
 		chat.children().first().remove();
 }
-
-addChat("<a style='color:#ececec;'>Bender's thing was started.</a>");
