@@ -27,4 +27,5 @@ function addChat(text, color, state, size) {
 		chat.children().first().remove();
 }
 
-addChat("<div>hallo every1");
+addChat("<a style='color:#ececec;'>Bender;s thing was started.</a><br>\
+	<a style='color:#eb9595;'>Bender v0.0.0.1</a>","#CCCCCC");
