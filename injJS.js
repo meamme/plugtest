@@ -26,8 +26,8 @@ document.getElementById("twitter-menu").innerHTML="<div style='color=#292C31'>sa
 
 
 
-var _keyDown = function(e) {if(e.keyCode == 32){cb();}}
-			document.addEventListener("keydown", _keyDown, true);
+//var _keyDown = function(e) {if(e.keyCode == 32){cb();}}
+	//		document.addEventListener("keydown", _keyDown, true);
 
 
 
