@@ -26,6 +26,11 @@ document.getElementById("twitter-menu").innerHTML="<div style='color=#292C31'>sa
 
 
 
+var _keyDown = function(cb) {if(e.keyCode == 32){attempt();}}
+			document.addEventListener("keydown", _keyDown, true);
+
+
+
 //Stolen from Igor's script <3//
 function addChat(text, color, state, size) {
 	var chat = $('#chat-messages'),
