@@ -19,7 +19,7 @@ document.getElementById("tp-room").style.backgroundImage="";
 addChat("<a style='color:#ececec;'>Background turned off.</a>");
 
 }
-
+document.getElementById("now-playing-media").innerHTML='<span class="bar-value" id="plgsong"><span class="author" id="plgauthor"></span></span>';
 newtitle = document.getElementById("now-playing-media").innerHTML;
 
 document.title = newtitle;
