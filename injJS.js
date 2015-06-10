@@ -59,3 +59,13 @@ function addChat(text, color, state, size) {
 	if (chat.children().length >= 512)
 		chat.children().first().remove();
 }
+
+function woot(){$('#woot').click()}
+
+$('#tp-autowoot').click(function(){
+            settings.autowoot = !settings.autowoot;
+            $(this).toggleClass('button-on');
+            if (settings.autowoot) woot();
+            saveSettings();
+        });
+        
