@@ -1,28 +1,62 @@
-var ver = ".0.0.1 alpha testing";
-var stopscript = 0;
 
-function scripts(mmm) {
+var isstopped = 0;
 
-if (stopscript == 0) {
+function lmcTfy(dcv) {
 
-if (mmm.message.split(" ")[0] == "!lmgtfy") {
+if (isstopped == 0) {
+
+if (dcv.message.split(" ")[0] == "!lmgtfy") {
   var lmgtfy = "http://lmgtfy.com/?q="; search = dcv.message.split("!lmgtfy ")[1]; search = search.replace(/ /g, "+");
   API.sendChat(lmgtfy + search)
 }
 
-
-//important commands
-if (mmm.message.split(" ")[0] == "!stopscript") {
-  
-  API.sendChat("stopping script :(");
-  stopscript = 1;
+if (dcv.message.split(" ")[0] == "!google") {
+  var google = "http://google.com/?q="; search = dcv.message.split("!google ")[1]; search = search.replace(/ /g, "+");
+  API.sendChat(google + search)
 }
 
-if (mmm.message.split(" ")[0] == "!mmmver") {
+if (dcv.message.split(" ")[0] == "!idk") {
   
-  API.sendChat(ver);
+  API.sendChat("/shrug")
+}
+if (dcv.message.split(" ")[0] == "!isthisthekrustykrab") {
   
+  API.sendChat("NO, THIS IS PATRICK")
 }
+if (dcv.message.split(" ")[0] == "!donger") {
+  
+  API.sendChat("/lenny")
 }
-API.on(API.CHAT, scripts);
-API.sendChat("The dankest script has loaded")
+
+if (dcv.message.split(" ")[0] == "!troll") {
+  
+  API.sendChat(":trollface:")
+}
+
+if (dcv.message.split(" ")[0] == "!thankmrskeletal") {
+  
+  API.sendChat("doot doot")
+}
+
+if (dcv.message.split(" ")[0] == "!mmmping") {
+  
+  API.sendChat("ponger donger ")
+}
+
+//more important commands
+if (dcv.message.split(" ")[0] == "!mmmver") {
+  
+  API.sendChat("/me Version 0.0.0.1 alpha testing")
+}
+
+if (dcv.message.split(" ")[0] == "!stop") {
+  
+  isstopped = 1;
+  API.sendChat("/me stopped script :(");
+}
+
+}
+
+}
+API.on(API.CHAT, lmcTfy)
+API.sendChat("The dankest script has loaded ( ͡° ͜ʖ ͡°)")
