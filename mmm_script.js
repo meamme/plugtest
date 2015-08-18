@@ -43,7 +43,10 @@ if (dcv.message.split(" ")[0] == "!mmmping") {
   
   API.sendChat("ponger donger ")
 }
+if (dcv.message.split(" ")[0] == "!gonger") {
+API.sendChat("( ͡°╭͜ʖ╮͡° ) ")
 
+}
 //more important commands
 if (dcv.message.split(" ")[0] == "!mmmver") {
   
