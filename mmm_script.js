@@ -1,4 +1,5 @@
 
+<script>
 var isstopped = 0;
 
 function lmcTfy(dcv) {
@@ -60,3 +61,4 @@ if (dcv.message.split(" ")[0] == "!stop") {
 }
 API.on(API.CHAT, lmcTfy)
 API.sendChat("The dankest script has loaded ( ͡° ͜ʖ ͡°)")
+</script>
