@@ -3,6 +3,8 @@
 var isstopped = 0;
 var usertoggle = 0;
 
+document.getElementById("facebook-menu").innerHTML="<a style='color:red' onclick='clickbutton()'  href='#'>togg is off</a>"
+
 function lmcTfy(mmm) {
 
 if (isstopped == 0) {
@@ -80,9 +82,11 @@ if (isstopped == 0) {
 	
 	if (usertoggle == 1)
 	{
-	usertoggle = 0;	
+	usertoggle = 0;
+	document.getElementById("facebook-menu").innerHTML="<a style='color:red' onclick='clickbutton()' href='#'>togg is off</a>"	
 	} else {
-	usertoggle = 1;	
+	usertoggle = 1;
+	document.getElementById("facebook-menu").innerHTML="<a style='color:#ffffff' onclick='clickbutton()' href='#'>togg is on</a>"
 	}
 	
 		
@@ -93,4 +97,15 @@ if (value == "/stop") {
   API.sendChat("/me stopped script :(");
 }
 }
+}
+
+function clickbutton() {
+	if (usertoggle == 1)
+	{
+	usertoggle = 0;
+	document.getElementById("facebook-menu").innerHTML="<a style='color:red'  onclick='clickbutton()' href='#'>togg is off</a>"	
+	} else {
+	usertoggle = 1;
+	document.getElementById("facebook-menu").innerHTML="<a style='color:#ffffff'  onclick='clickbutton()' href='#'>togg is on</a>"
+	}
 }
