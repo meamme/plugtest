@@ -1,66 +1,96 @@
 
 
 var isstopped = 0;
+var usertoggle = 0;
 
-function lmcTfy(dcv) {
+function lmcTfy(mmm) {
 
 if (isstopped == 0) {
-
-if (dcv.message.split(" ")[0] == "!lmgtfy") {
-  var lmgtfy = "http://lmgtfy.com/?q="; search = dcv.message.split("!lmgtfy ")[1]; search = search.replace(/ /g, "+");
+ if (usertoggle == 1) {
+//search functions
+if (mmm.message.split(" ")[0] == "!lmgtfy") {
+  var lmgtfy = "http://lmgtfy.com/?q="; search = mmm.message.split("!lmgtfy ")[1]; search = search.replace(/ /g, "+");
   API.sendChat(lmgtfy + search)
 }
 
-if (dcv.message.split(" ")[0] == "!google") {
-  var google = "http://google.com/?q="; search = dcv.message.split("!google ")[1]; search = search.replace(/ /g, "+");
+if (mmm.message.split(" ")[0] == "!google") {
+  var google = "http://google.com/?q="; search = mmm.message.split("!google ")[1]; search = search.replace(/ /g, "+");
   API.sendChat(google + search)
 }
 
-if (dcv.message.split(" ")[0] == "!idk") {
+//fun stuff
+if (mmm.message.split(" ")[0] == "!idk") {
   
   API.sendChat("/shrug")
 }
-if (dcv.message.split(" ")[0] == "!isthisthekrustykrab") {
+if (mmm.message.split(" ")[0] == "!isthisthekrustykrab") {
   
   API.sendChat("NO, THIS IS PATRICK")
 }
-if (dcv.message.split(" ")[0] == "!donger") {
+if (mmm.message.split(" ")[0] == "!donger") {
   
   API.sendChat("/lenny")
+  
 }
 
-if (dcv.message.split(" ")[0] == "!troll") {
+if (mmm.message.split(" ")[0] == "!troll") {
   
   API.sendChat(":trollface:")
 }
 
-if (dcv.message.split(" ")[0] == "!thankmrskeletal") {
+if (mmm.message.split(" ")[0] == "!thankmrskeletal") {
   
   API.sendChat("doot doot")
 }
 
-if (dcv.message.split(" ")[0] == "!mmmping") {
+if (mmm.message.split(" ")[0] == "!mmmping") {
   
   API.sendChat("ponger donger ")
 }
-if (dcv.message.split(" ")[0] == "!gonger") {
-API.sendChat("( ͡°╭͜ʖ╮͡° ) ")
+if (mmm.message.split(" ")[0] == "!gonger") {
+API.sendChat("( ͡°╭͜ʖ╮͡° )")
 
 }
+
+
 //more important commands
-if (dcv.message.split(" ")[0] == "!mmmver") {
+if (mmm.message.split(" ")[0] == "!mmmver") {
   
   API.sendChat("/me Version 0.0.0.1 alpha testing")
 }
 
-if (dcv.message.split(" ")[0] == "!stop") {
+
+
+
+//end
+}
+}
+}
+API.on(API.CHAT, lmcTfy)
+
+API.sendChat("The dankest script has loaded ( ͡° ͜ʖ ͡°)")
+
+
+API.on(API.CHAT_COMMAND, callback);
+
+function callback(value) {
+
+if (isstopped == 0) {
+    if (value == "/toggleuser") {
+	
+	if (usertoggle == 1)
+	{
+	usertoggle = 0;	
+	} else {
+	usertoggle = 1;	
+	}
+	
+		
+	}
+if (value == "/stop") {
   
   isstopped = 1;
   API.sendChat("/me stopped script :(");
 }
-
 }
-
 }
-API.on(API.CHAT, lmcTfy)
-API.sendChat("The dankest script has loaded ( ͡° ͜ʖ ͡°)")
