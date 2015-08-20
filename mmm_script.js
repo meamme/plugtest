@@ -24,15 +24,22 @@ if (mmm.message.split(" ")[0] == "!google") {
 //fun stuff
 if (mmm.message.split(" ")[0] == "!idk") {
   
-  API.sendChat("/shrug")
+  API.sendChat("!/shrug")
 }
 if (mmm.message.split(" ")[0] == "!isthisthekrustykrab") {
   
   API.sendChat("NO, THIS IS PATRICK")
 }
-if (mmm.message.split(" ")[0] == "!donger") {
+
+if (mmm.message.split(" ")[0] == "!fitemeirl") {
   
-  API.sendChat("/lenny")
+  API.sendChat("(ง ° ͜ ʖ °)ง  fite me irl")
+  
+}
+
+if (mmm.message.split(" ")[0] == "!why") {
+  
+  API.sendChat("乁( ⁰͡  Ĺ̯ ⁰͡ ) ㄏ")
   
 }
 
